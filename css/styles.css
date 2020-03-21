@@ -206,12 +206,8 @@
     font-size: 18px;
 }
 
-#twitter .new-tweet-container .tweet-container-header .tweet-container-footer {
+#twitter .new-tweet-container .tweet-container-header .tweet-container-footer-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center
-}
-
-#twitter .new-tweet-container .tweet-container-header .tweet-container-footer .tweet-container-footer-buttons {
-    margin-left: 3em;
 }
