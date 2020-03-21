@@ -29,13 +29,13 @@
     margin: 1em 0 1em 0;
 }
 
-#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-trends{
+#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-trends {
     display: flex;
     flex-direction: column;
     padding: 1em;
 }
 
-#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-trends:hover{
+#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-trends:hover {
     background-color: #cbced1;
     cursor: pointer;
 }
@@ -50,7 +50,7 @@
     padding: 1em;
 }
 
-#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-content:hover{
+#twitter .right-side-bar .right-side-bar-container .right-side-bar-container-content:hover {
     background-color: #cbced1;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@
 }
 
 
-#twitter .tweeter-search-container .tweeter-search-container-input{
+#twitter .tweeter-search-container .tweeter-search-container-input {
     border: none;
     background-color: #E6ECF0;
 }
@@ -135,6 +135,7 @@
 
 #twitter .tweet-container {
     border-top: 1px solid lightgray;
+    padding: 0.5em;
 }
 
 #twitter .tweet-container:hover {
@@ -149,17 +150,20 @@
 }
 
 #twitter .tweet-container .notification-tweet-buttons {
-    display: flex
+    display: flex;
 }
 
 
 #twitter .tweet-container .like-button {
-    display: block;
+    display: flex;
     margin: auto;
+    align-items: center;
 }
 
 #twitter .tweet-container .like-button:hover {
-    color: red;
+    color: cornflowerblue;
+    background-color: rgba(100, 149, 237, 0.2);
+    border-radius: 25px;
 }
 
 
