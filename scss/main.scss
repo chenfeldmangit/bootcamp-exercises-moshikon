@@ -219,7 +219,7 @@
 
     .profile-page-mid {
       @include flex(row);
-      align-content: space-around;
+      justify-content: space-between;
     }
     .name-n-tweet {
       @include flex(column);
@@ -228,7 +228,7 @@
 
     .profile-page-image {
       border-radius: 50px;
-      margin-top: -5em;
+      margin-top: -3em;
     }
 
     .profile-context-container {

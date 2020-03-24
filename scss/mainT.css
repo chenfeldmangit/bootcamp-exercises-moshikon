@@ -179,7 +179,7 @@
 #twitter .profile-page .profile-page-mid {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
+  justify-content: space-between;
 }
 #twitter .profile-page .name-n-tweet {
   display: flex;
@@ -188,7 +188,7 @@
 }
 #twitter .profile-page .profile-page-image {
   border-radius: 50px;
-  margin-top: -5em;
+  margin-top: -3em;
 }
 #twitter .profile-page .profile-context-container {
   display: flex;
