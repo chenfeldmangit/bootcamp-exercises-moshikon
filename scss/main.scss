@@ -123,8 +123,7 @@
     }
   }
 
-  .notification-container,
-  .profile-page {
+  .notification-container {
     width: 45%;
     margin-left: 25%;
     border: 1px solid lightgray;
@@ -217,6 +216,7 @@
     width: 45%;
     margin-left: 25%;
     border: 1px solid lightgray;
+
     .profile-page-mid {
       @include flex(row);
       align-content: space-around;
