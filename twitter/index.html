@@ -5,6 +5,7 @@
     <title>New Twitter</title>
     <link rel="stylesheet" type="text/css" href="../scss/mainT.css">
     <link rel="icon" href="https://abs.twimg.com/favicons/twitter-pip.ico">
+    <script src='index.js' async></script>
 </head>
 <body id="twitter">
     <div class="left-side-bar">
@@ -15,7 +16,7 @@
                 </button>
             </li>
             <li>
-                <button class="tweeter-default-button">
+                <button class="tweeter-default-button" onclick='onHomeClick()'>
                     <img src="../assets/home.svg" alt="home" width="25">
                     <span>Home</span>
                 </button>
@@ -51,7 +52,7 @@
                 </button>
             </li>
             <li>
-                <button class="tweeter-default-button">
+                <button class="tweeter-default-button" onclick='onProfileClick()'>
                     <img class="profile-image" src="../assets/monk.svg" width="30" alt="profile">
                     <span>Profile</span>
                 </button>
@@ -158,7 +159,6 @@
                 </button>
             </div>
         </div>
-
         <div class="tweet-container">
             <div class="tweet-container-header">
                 <img class="profile-image" src="../assets/monk.svg" width="40" alt="profile">
@@ -185,7 +185,6 @@
                 </button>
             </div>
         </div>
-
         <div class="tweet-container">
             <div class="tweet-container-header">
                 <img class="profile-image" src="../assets/monk.svg" width="40" alt="profile">
@@ -212,7 +211,6 @@
                 </button>
             </div>
         </div>
-
         <div class="tweet-container">
             <div class="tweet-container-header">
                 <img class="profile-image" src="../assets/monk.svg" width="40" alt="profile">
@@ -239,7 +237,6 @@
                 </button>
             </div>
         </div>
-
         <div class="tweet-container">
             <div class="tweet-container-header">
                 <img class="profile-image" src="../assets/monk.svg" width="40" alt="profile">
@@ -266,7 +263,6 @@
                 </button>
             </div>
         </div>
-
         <div class="tweet-container">
             <div class="tweet-container-header">
                 <img class="profile-image" src="../assets/monk.svg" width="40" alt="profile">
@@ -291,6 +287,35 @@
                 <button class="like-button">
                     <img src="../assets/export.svg" width="20" alt="love">
                 </button>
+            </div>
+        </div>
+    </div>
+    <div hidden class="profile-page">
+        <div>
+            <div class='arrow-back'></div>
+            <div class='name-n-tweet'>
+                <span class='name'></span>
+                <span class='tweets'></span>
+            </div>
+        </div>
+        <img src="" class='cover' alt=''>
+        <div class='profile-page-mid'>
+            <img width='100' src="" class='profile profile-page-image' alt=''>
+            <button class="follow-button">
+                <span>Edit</span>
+            </button>
+        </div>
+        <div class='profile-context-container'>
+            <span class='official-name'></span>
+            <span class='nick-name'></span>
+            <span class='date'></span>
+            <div>
+                <span class='following'></span>
+                <span> following </span>
+            </div>
+            <div>
+                <span class='followers'></span>
+                <span> followers </span>
             </div>
         </div>
     </div>

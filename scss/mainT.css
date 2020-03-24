@@ -101,75 +101,115 @@
 #twitter .tweet-button:hover {
   background-color: #4F6CED;
 }
-#twitter .notification-container {
+#twitter .notification-container,
+#twitter .profile-page {
   width: 45%;
   margin-left: 25%;
   border: 1px solid lightgray;
 }
-#twitter .tweet-container {
+#twitter .notification-container .tweet-container,
+#twitter .profile-page .tweet-container {
   border-top: 1px solid lightgray;
   padding: 0.5em;
 }
-#twitter .tweet-container:hover {
+#twitter .notification-container .tweet-container:hover,
+#twitter .profile-page .tweet-container:hover {
   background-color: lightgray;
   cursor: pointer;
 }
-#twitter .tweet-container .notification-tweet-context {
+#twitter .notification-container .tweet-container .notification-tweet-context,
+#twitter .profile-page .tweet-container .notification-tweet-context {
   text-align: center;
   font-size: 1.2em;
   padding: 5px;
 }
-#twitter .tweet-container .notification-tweet-buttons {
+#twitter .notification-container .tweet-container .notification-tweet-buttons,
+#twitter .profile-page .tweet-container .notification-tweet-buttons {
   display: flex;
 }
-#twitter .tweet-container .like-button {
+#twitter .notification-container .tweet-container .like-button,
+#twitter .profile-page .tweet-container .like-button {
   display: flex;
   margin: auto;
   align-items: center;
 }
-#twitter .tweet-container .like-button:hover {
+#twitter .notification-container .tweet-container .like-button:hover,
+#twitter .profile-page .tweet-container .like-button:hover {
   color: cornflowerblue;
   background-color: rgba(100, 149, 237, 0.2);
   border-radius: 25px;
 }
-#twitter .tweet-container .tweet-container-header {
+#twitter .notification-container .tweet-container .tweet-container-header,
+#twitter .profile-page .tweet-container .tweet-container-header {
   margin: 0.5em;
 }
-#twitter .tweet-container .tweet-container-header .tweet-header {
+#twitter .notification-container .tweet-container .tweet-container-header .tweet-header,
+#twitter .profile-page .tweet-container .tweet-container-header .tweet-header {
   font-size: 16px;
   font-weight: bold;
 }
-#twitter .tweet-container .tweet-container-header .tweet-sub-header {
+#twitter .notification-container .tweet-container .tweet-container-header .tweet-sub-header,
+#twitter .profile-page .tweet-container .tweet-container-header .tweet-sub-header {
   color: grey;
   font-size: 14px;
 }
-#twitter .new-tweet-container {
+#twitter .notification-container .new-tweet-container,
+#twitter .profile-page .new-tweet-container {
   border-bottom: 0.5em solid lightgray;
 }
-#twitter .new-tweet-container .tweet-container-header .tweet-button {
+#twitter .notification-container .new-tweet-container .tweet-container-header .tweet-button,
+#twitter .profile-page .new-tweet-container .tweet-container-header .tweet-button {
   width: 5em;
 }
-#twitter .new-tweet-container .tweet-container-header .tweet-container-header-title {
+#twitter .notification-container .new-tweet-container .tweet-container-header .tweet-container-header-title,
+#twitter .profile-page .new-tweet-container .tweet-container-header .tweet-container-header-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1em 0 1em;
   border-bottom: 1px solid lightgray;
 }
-#twitter .new-tweet-container .tweet-container-header .tweet-container-header-context {
+#twitter .notification-container .new-tweet-container .tweet-container-header .tweet-container-header-context,
+#twitter .profile-page .new-tweet-container .tweet-container-header .tweet-container-header-context {
   display: flex;
   align-items: center;
   margin: 1em 0 0 1em;
 }
-#twitter .new-tweet-container .tweet-container-header .tweet-container-header-context .tweet-container-header-context-textarea {
+#twitter .notification-container .new-tweet-container .tweet-container-header .tweet-container-header-context .tweet-container-header-context-textarea,
+#twitter .profile-page .new-tweet-container .tweet-container-header .tweet-container-header-context .tweet-container-header-context-textarea {
   border: none;
   margin-left: 1em;
   font-size: 18px;
 }
-#twitter .new-tweet-container .tweet-container-header .tweet-container-footer-buttons {
+#twitter .notification-container .new-tweet-container .tweet-container-header .tweet-container-footer-buttons,
+#twitter .profile-page .new-tweet-container .tweet-container-header .tweet-container-footer-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#twitter .profile-page {
+  width: 45%;
+  margin-left: 25%;
+  border: 1px solid lightgray;
+}
+#twitter .profile-page .profile-page-mid {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+#twitter .profile-page .name-n-tweet {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+#twitter .profile-page .profile-page-image {
+  border-radius: 50px;
+  margin-top: -5em;
+}
+#twitter .profile-page .profile-context-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
 }
 #twitter .profile-image {
   border-radius: 20px;

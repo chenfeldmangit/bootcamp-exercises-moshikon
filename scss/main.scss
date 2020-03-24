@@ -7,7 +7,7 @@
   margin: auto;
   font-family: Arial;
 
-    button {
+  button {
     background-color: transparent;
     border: none;
     margin: 5px;
@@ -16,6 +16,7 @@
 
   .left-side-bar {
     position: fixed;
+
     ul {
       list-style-type: none;
     }
@@ -122,92 +123,119 @@
     }
   }
 
-  .notification-container {
+  .notification-container,
+  .profile-page {
     width: 45%;
     margin-left: 25%;
     border: 1px solid lightgray;
-  }
 
-  .tweet-container {
-    border-top: 1px solid lightgray;
-    padding: 0.5em;
-
-    &:hover {
-      background-color: lightgray;
-      cursor: pointer;
-    }
-
-    .notification-tweet-context {
-      text-align: center;
-      font-size: 1.2em;
-      padding: 5px;
-    }
-
-    .notification-tweet-buttons {
-      display: flex;
-    }
-
-    .like-button {
-      display: flex;
-      margin: auto;
-      align-items: center;
+    .tweet-container {
+      border-top: 1px solid lightgray;
+      padding: 0.5em;
 
       &:hover {
-        color: cornflowerblue;
-        background-color: rgba(100, 149, 237, 0.2);
-        border-radius: 25px;
-      }
-    }
-
-    .tweet-container-header {
-      margin: 0.5em;
-
-      .tweet-header {
-        font-size: 16px;
-        font-weight: bold;
+        background-color: lightgray;
+        cursor: pointer;
       }
 
-      .tweet-sub-header {
-        color: grey;
-        font-size: 14px;
-      }
-    }
-  }
-
-  .new-tweet-container {
-    border-bottom: 0.5em solid lightgray;
-
-    .tweet-container-header {
-      .tweet-button {
-        width: 5em;
+      .notification-tweet-context {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 5px;
       }
 
-      .tweet-container-header-title {
+      .notification-tweet-buttons {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1em 0 1em;
-        border-bottom: 1px solid lightgray
       }
 
-      .tweet-container-header-context {
+      .like-button {
         display: flex;
+        margin: auto;
         align-items: center;
-        margin: 1em 0 0 1em;
 
-        .tweet-container-header-context-textarea {
-          border: none;
-          margin-left: 1em;
-          font-size: 18px;
+        &:hover {
+          color: cornflowerblue;
+          background-color: rgba(100, 149, 237, 0.2);
+          border-radius: 25px;
         }
       }
 
-      .tweet-container-footer-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center
+      .tweet-container-header {
+        margin: 0.5em;
+
+        .tweet-header {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .tweet-sub-header {
+          color: grey;
+          font-size: 14px;
+        }
       }
     }
+
+    .new-tweet-container {
+      border-bottom: 0.5em solid lightgray;
+
+      .tweet-container-header {
+        .tweet-button {
+          width: 5em;
+        }
+
+        .tweet-container-header-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 1em 0 1em;
+          border-bottom: 1px solid lightgray
+        }
+
+        .tweet-container-header-context {
+          display: flex;
+          align-items: center;
+          margin: 1em 0 0 1em;
+
+          .tweet-container-header-context-textarea {
+            border: none;
+            margin-left: 1em;
+            font-size: 18px;
+          }
+        }
+
+        .tweet-container-footer-buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center
+        }
+      }
+    }
+
+  }
+
+  .profile-page {
+    width: 45%;
+    margin-left: 25%;
+    border: 1px solid lightgray;
+    .profile-page-mid {
+      @include flex(row);
+      align-content: space-around;
+    }
+    .name-n-tweet {
+      @include flex(column);
+      margin-left: 1em;
+    }
+
+    .profile-page-image {
+      border-radius: 50px;
+      margin-top: -5em;
+    }
+
+    .profile-context-container {
+      @include flex(column);
+      margin-left: 1em;
+    }
+
   }
 
   .profile-image {
